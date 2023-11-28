@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+#game-container {
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  border: 2px dotted #333; /* Dotted border around the game area */
+  background-color: white; /* White background */
+}
+
+.paddle {
+  position: absolute;
+  height: 20px;
+  width: 150px;
+  border-radius: 10px; /* Rounded corners */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#paddle-top {
+  top: 0;
+  background-color: blue; /* Player 1 paddle color */
+}
+
+#paddle-bottom {
+  bottom: 0;
+  background-color: violet; /* Player 2 paddle color */
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
